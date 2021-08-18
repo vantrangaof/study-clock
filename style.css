@@ -1,0 +1,125 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+
+body{
+    color: white;
+    background-color: #333333;
+    background-image: url("https://images.unsplash.com/photo-1474366521946-c3d4b507abf2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    font-family: digital, Arial;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.time-sets{
+    display:grid;
+    grid-template-columns: 50px 200px 50px;
+    justify-items:center;
+    align-items: center;
+}
+
+/*.dual-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: auto;
+    justify-items:center;
+    align-items: center;
+}*/
+
+.clock-title{
+    color: white;
+    background-color: rgba(38, 38, 38, 0.3);
+}
+
+.dual-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.break-length, .session-length {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(38, 38, 38, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.break-length {
+    margin-right: 20px;
+}
+.session-length {
+    margin-left: 20px;
+}
+
+.display-clock{
+    margin: 50px auto;
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 350px;
+    background-color: rgba(38, 38, 38, 0.3);
+    color: white;
+}
+
+.display-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+.play-button{
+    margin: auto;
+    margin-right: 10px;
+    background-color: blue;
+}
+.reset-button{
+    margin: auto;
+    margin-left: 0px;
+}
+
+
+.row{
+    padding: 5px;
+}
+
+iframe{
+display: flex;
+align-items: center;
+justify-items: center;
+margin: 100px auto;
+width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+    .dual-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-items:center;
+        align-items: center;}
+        
+        .break-length, .session-length {
+            margin: 20px auto;
+        }
+        iframe{
+            width: 100%;
+        }
+}
