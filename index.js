@@ -5,7 +5,7 @@ function App(){
     const [timerOn, setTimerOn] = React.useState(false);
     const [onBreak, setOnBreak] = React.useState(false);
     const [breakAudio, setBreakAudio] = React.useState(
-        new Audio("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav")
+        new Audio("./breakTime.mp3")
         );
     const playBreakSound = () => {
         breakAudio.currentTime = 0;
